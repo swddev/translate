@@ -16,8 +16,6 @@ COPY ./app /code/app
 # Set the environment variable for OpenAI API key (replace with your key or set it externally)
 ENV OPENAI_API_KEY=<your_openai_api_key>
 
-# Expose the application port
-EXPOSE 8000
 
 # Run the application
 CMD ["uvicorn", "app.app:app", "--host=0.0.0.0", "--reload"]

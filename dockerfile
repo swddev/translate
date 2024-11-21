@@ -13,8 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application files
 COPY ./app /code/app
 
-# Set the environment variable for OpenAI API key (replace with your key or set it externally)
-ENV OPENAI_API_KEY=<your_openai_api_key>
+# Create env file for OPENAI_API_KEY
+RUN echo "OPENAI_API_KEY=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" > .env
 
 
 # Run the application

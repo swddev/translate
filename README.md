@@ -14,3 +14,9 @@ A simple FastAPI-based application that uses OpenAI's GPT model to translate tex
 - FastAPI
 - OpenAI Python SDK
 - Docker (optional, for containerization)
+
+---
+
+## Setup
+- Place your OpenAI API key in a `.env` file in the root directory of the project. (See `.env.example` for reference)
+- Run `docker-compose up` to start the FastAPI server.

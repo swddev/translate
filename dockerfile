@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY ./app /code/app
 
 # Create env file for OPENAI_API_KEY
-RUN echo "OPENAI_API_KEY=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" > .env
+RUN echo "OPENAI_API_KEY=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" > .env
 
 
 # Run the application

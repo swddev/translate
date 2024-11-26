@@ -37,7 +37,7 @@ async def translate_object(request: TranslationRequest):
         response = openai.chat.completions.create(
             model="gpt-4o-mini",  # Use an appropriate OpenAI model
             messages=messages,
-            temperature=0.3,
+            temperature=0.2,
         )
 
         # Extract the translated text from the response

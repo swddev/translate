@@ -42,9 +42,8 @@ async def translate_object(request: TranslationRequest):
 
         # Extract the translated text from the response
         translated_text = response.choices[0].message.content
-        translated_object = eval(translated_text)  # Reconstruct the original object
-
-        return {"translated_object": translated_object}
+        
+        return {"translated_text": translated_text}
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Translation API error: {str(e)}")
